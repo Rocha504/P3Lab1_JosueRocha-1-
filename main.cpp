@@ -6,7 +6,7 @@ using std::endl;
 
 int main(int argc, char** argv) {
 	
-	int op=0;
+	int op=0,i=0, i2=0, op2;
 	
 	while(op!=4){
 	
@@ -19,15 +19,44 @@ int main(int argc, char** argv) {
 	cout<<"4.Salir"<<endl<<endl;
 	cout<<"Ingrese un numero"<<endl;
 	cin>>op;
-	if(op>4 || op<1){
-		cout<<"*WARNING*: Opcion invalida"<<endl;
+	switch(op){
+		case 1:{
+			cout<<"Ingrese un numero: ";
+			cin>>op2;
+			if(op2<1){
+				cout<<"Porfavor ingrese un numero mayor a 0";
+				cin>>op2;
+			}
+			while(i2<op2){
+				if(i2%2!=0){
+					while(i<op2){
+						cout<<"1";
+						i++;
+						cout<<"0";
+						i++;
+					}
+				}
+				else{
+					while(i<op2){
+						cout<<"0";
+						i++;
+						cout<<"1";
+						i++;
+					}
+				}
+			    cout<<endl;
+				i2++;
+				i=0;	
+			}
+			 
+		}	 
+	}
+			break;
+			
+			
 	}
 	
+		return 0;
 	}
 	
-	
-	
-	
-	
-	return 0;
-}
+ 
