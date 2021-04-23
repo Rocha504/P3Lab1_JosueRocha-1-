@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
 			cout<<"Ingrese un numero: ";
 			cin>>op2;
 			if(op2<1){
-				cout<<"Porfavor ingrese un numero mayor a 0";
+				cout<<"Porfavor ingrese un numero mayor a 0"<<endl;
 				cin>>op2;
 			}
 			while(i2<op2){
@@ -49,9 +49,26 @@ int main(int argc, char** argv) {
 				i=0;	
 			}
 			 
-		}	 
+		}
+		break;
+		case 2:{
+			int sum,acum=0;
+			cout<<"Ingrese un numero entero positivo para su sumatoria: "<<endl;
+			cin>>sum;
+			if(sum<=0){
+				cout<<"Porfavor ingrese un entero positivo"<<endl<<endl;
+			}
+			else{
+				for(int i=1;i<=sum;i++){
+					acum=acum+2*i*(i-1);
+				}
+				cout<<"El resultado de la sumatoria es de: "<<acum<<endl<<endl; 
+			}
+		 
+		}
+			break;	 
 	}
-			break;
+			 
 			
 			
 	}
