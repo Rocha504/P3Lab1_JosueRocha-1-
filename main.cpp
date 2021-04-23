@@ -89,7 +89,7 @@ int main(int argc, char** argv) {
 							cout<<"La raiz cuadrada es: "<<mitad;
 						}
 					}
-					cout<<"La raiz cuadrada estimada es: "<<mitad;
+					cout<<"La raiz cuadrada estimada es: "<<mitad<<endl<<endl;
 					 
 				}
 				else{
@@ -97,6 +97,9 @@ int main(int argc, char** argv) {
 				}
 		}
 		break;
+		default:{
+			break;
+		}
 	}
 			 
 			
