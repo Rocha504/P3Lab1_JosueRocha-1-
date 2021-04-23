@@ -66,7 +66,37 @@ int main(int argc, char** argv) {
 			}
 		 
 		}
-			break;	 
+			break;	
+			case 3:{
+				double n,mult,mitad,div,raiz;
+				int t;
+				cout<<"Ingrese un numero entero: "<<endl;
+				cin>>n;
+				cout<<"Ingrese un numero entero mayor a diez"<<endl;
+				cin>>t;
+				if(t>10){
+					mitad=n/2;
+					for(int i=0;i<t;i++){
+					    mult=mitad*mitad;
+					    if(mult>n){
+					   	  mitad=mitad/2;
+						}
+					    	else if(mult<n){
+					    		mitad=mitad+0.1;
+							}
+						
+						else if(mult==n){
+							cout<<"La raiz cuadrada es: "<<mitad;
+						}
+					}
+					cout<<"La raiz cuadrada estimada es: "<<mitad;
+					 
+				}
+				else{
+					cout<<"Porfavor ingrese un numero mayor a 10"<<endl; 
+				}
+		}
+		break;
 	}
 			 
 			
